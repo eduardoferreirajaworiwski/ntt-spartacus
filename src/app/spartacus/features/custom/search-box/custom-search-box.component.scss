@@ -1,0 +1,42 @@
+/* Estilização para a Search Box */
+.searchbox {
+  position: relative;
+  display: inline-block;
+  width: 300px; /* Ajuste conforme necessário */
+  border: 2px solid #FF5722; /* Laranja */
+  border-radius: 20px; /* Arredondamento maior para uma borda bonitinha */
+}
+
+.searchbox input[type="text"] {
+  width: calc(100% - 40px); /* Considerando o espaço do ícone de pesquisa */
+  padding: 10px;
+  border: none;
+  border-radius: 20px; /* Arredondamento igual ao da caixa externa */
+  font-size: 16px;
+  outline: none; /* Remover a borda ao focar */
+}
+
+.searchbox .reset,
+.searchbox .search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.searchbox .reset {
+  right: 35px;
+}
+
+.searchbox .search {
+  right: 10px;
+}
+
+.searchbox .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
